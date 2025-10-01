@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1D1C22;
+  font-family: JekoMEDIUM;
+  padding-top: 66px;
+}
+
+
+.welcome-box {
+  background-color: #2C2C33; /* warna background */
+  color: #fff; /* biar tulisan kontras */
+  padding: 5px; /* jarak dalam */
+  border-radius: 12px; /* biar sudutnya agak bulat */
+  max-width: 700px; /* biar ga terlalu melebar */
+  margin: 30px auto; /* posisi di tengah */
+  text-align: center; /* teks rata tengah */
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.welcome-box h3 {
+  font-family: Poppinsextrabold;
+}
+
+@font-face {
+  font-family: 'PoppinsExtraBold';
+  src: url('Poppins-Extrabold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'JekoMEDIUM';
+  src: url('JekoDEMO-Medium.otf') format('opentype');
+}
+
+/* Header */
+.header {
+  background-color: #2C2C33;
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1100;
+  transition: transform 0.3s ease;
+}
+
+/* Logo */
+.logo {
+  height: 50px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  margin-left: 10px; /* beri jarak setelah tombol kembali */
+}
+
+/* Tombol kembali */
+.back-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.banner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+.banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 15px rgba(44, 44, 51, 0.6);
+}
+.banner img:hover { transform: scale(1.02); }
+@media (min-width: 992px) {
+  .banner { width: 75%; max-width: none; }
+}
+
+/* ============================= */
+/* SERVICE SECTION + LAYANAN BOX */
+/* ============================= */
+
+.service-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* jarak antar elemen */
+  margin: 20px 0;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.title-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 2px solid #fff;
+  padding: 6px 20px;
+  width: fit-content;
+}
+
+.title-box .logo {
+  width: 40px;
+  height: 40px;
+}
+
+.title-box h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #fff;
+  font-family: 'PoppinsExtraBold', sans-serif;
+}
+
+.service-box {
+  background-color: #2C2C33;
+  border-radius: 15px;
+  padding: 15px 20px;
+  margin: 15px 0;
+  width: 90%;             /* full lebar */
+  max-width: 650px;        /* batasi biar gak terlalu panjang di layar gede */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.4);
+}
+
+.service-logo-big {
+  height: 80px;           /* logo jadi besar */
+  width: 80px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  flex-shrink: 0;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* teks rata kiri */
+  gap: 10px;
+}
+
+.service-text {
+  font-size: 20px;
+  font-family: JekoMEDIUM;
+}
+
+.service-btn {
+  display: inline-block;
+  width: 150px;          /* konsisten semua 200px */
+  text-align: left;      /* biar teks tetap di kiri */
+  background-color: #91A9BC;
+  color: #1D1C22;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-family: PoppinsExtraBold;
+  border: 1px solid ;
+  transition: all 0.3s ease;
+}
+
+.service-btn:hover {
+  background-color: #ddd;
+}
+
+.p1 p {
+  color: #fff;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.highlight {
+  color: #91A9BC; /* ganti sesuai warna yang kamu mau */
+  font-weight: bold; /* opsional, biar lebih menonjol */
+}
+
+
+.link-container {
+  background-color: #2C2C33;
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 380px;
+  margin: 40px auto;
+}
+
+.link-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  position: relative;
+}
+
+.link-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.link-left img {
+  width: 50px;   /* sebelumnya 28px */
+  height: 50px;
+}
+
+.link-text {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.cart-btn {
+  background: #3a3a45;
+  padding: 8px;           /* agak lebih besar */
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-icon {
+  width: 35px;           /* diperbesar */
+  height: 35px;
+}
+
+/* garis pemisah */
+.link-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  height: 1px;
+  background-color: #444;
+}

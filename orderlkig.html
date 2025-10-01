@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buat Pesanan | Lannefy.com</title>
+  <link rel="stylesheet" href="order.css">
+</head>
+<body>
+  <!-- header + logo -->
+<header class="header">
+  <button class="back-btn" onclick="goBackSMM()">
+    &lt;
+  </button>
+  <img src="hlogo.png" alt="Logo" class="logo">
+</header>
+  
+    <div class="banner"><img src="hbanner.png" alt="Banner"></div>
+  <br>
+ <div class="service-section">
+  <!-- Judul Service -->
+
+   
+   <div class="deskjudul">
+     <p>Lengkapi rincian pesananmu dibawah ini biar bisa langsung di proses</p>
+     <p><span class="highlight">[ ! ] Note </span>:</p>
+     <p><span class="highlight">[ 1 ] </span>Isi setiap form dengan benar & valid agar tidak terjadi error.</p>
+     <p><span class="highlight">[ 2 ] </span>Baca deskripsi setiap layanan untuk mengetahui kelebihan & kekurangan pada setiap layanan.</p>
+     
+   </div>
+   <br> 
+  
+     <div class="title-container">
+    <div class="title-box">
+      <img src="ig.png" alt="Instagram Logo" class="logo">
+      <h6>Buat Pesanan</h6>
+    </div>
+  </div> 
+   
+   <div class="promo-box">
+  🎁 <span class="highlight">[ ! ] Promo Spesial s/d 17 Oktober</span>, Gratis 100 Like untuk 1 postingan untuk setiap pembelian diatas 27K
+</div>
+   
+   
+<!-- Username -->
+<div class="form-group">
+  <label for="username">Username / Link Profil</label>
+  <input type="text" id="username" placeholder="Masukkan Username atau Link Profil">
+</div>
+
+<!-- Pilih Layanan -->
+<div class="form-group">
+  <label for="dropdown">Pilih Layanan</label>
+  <div id="dropdown" class="dropdown">
+    <div id="dropdownSelected" class="dropdown-selected">Pilih Layanan</div>
+<ul id="dropdownList" class="dropdown-list">
+  <li data-target="layanan1">IG LIKES BOT SUPER MURAH 🔥♻️</li>
+  <li data-target="layanan2">IG LIKES MEDIUM-QUALITY ⭐🔥</li>
+  <li data-target="layanan3">IG LIKES GOOD QUALITY ⭐♻️🔥</li>
+  <li data-target="layanan4">IG LIKES HIGH QUALITY 100% ACC REAL 🌟🔥♻️</li>
+  <li data-target="layanan5">IG LIKES OLD QUALITY | EMERGENCY ♻️🔥⭐</li>
+  <li data-target="layanan6">IG LIKES HIGH QUALITY | EMERGENCY | LESS DROP 🌟🔥</li>
+  <li data-target="layanan7">IG LIKES SUPER HIGH-QUALITY | LESS DROP 🌟🔥♻️</li>
+  <li data-target="layanan8">IG LIKES PREMIUM QUALITY | EMERGENCY | REFILL LIFETIME 🌟👑♻️🔥</li>
+</ul>
+  </div>
+</div>
+
+<!-- DETAIL LAYANAN -->
+<div id="serviceContent">
+  <!-- semua <div id="layananX" class="service-box"> tetap di sini -->
+</div>
+
+<!-- FORM KUANTITAS & HARGA (cukup satu kali di sini) -->
+<div class="form-group">
+  <label for="quantity">Kuantitas</label>
+  <input type="number" id="quantity" placeholder="Jumlah Item">
+</div>
+
+<div class="form-group">
+  <label for="totalHarga">Total Harga</label>
+  <input type="text" id="totalHarga" readonly placeholder="Rp 0">
+</div>
+   <p class="min-pembelian">Minimal Pembelian = <span class="highlight2">Rp. 12.000</span></p>
+   
+   <div id="bonusText" class="bonus-text"></div>
+<!-- ==================== KONTEN DETAIL LAYANAN ==================== -->
+<div id="serviceContent">
+ 
+  <div id="layanan1" class="service-box">
+    <div class="deskripsi1">
+      <h4>Deskripsi Layanan</h4>     
+    </div>
+    <div class="deskripsi2">
+      <ul>
+<li>Layanan Instagram Likes <span class="highlight2">Super Murah ‼️</span></li>
+<li>Kualitas Layanan = <span class="hightlight2">Low Quality</span></li>
+<li>Maksimal Pesanan = 1M</li>
+<li>Rate Drop = 30-80% | <span class="highlight">[ ! ] Layanan dengan harga rendah cenderung memiliki RATE DROP YANG TINGGI.</span></li>
+<li>Refill = R60 Days | <span class="highlight2">[ ! ] Silahkan Ajukan Permi Refill kepada admin jika likes yang di dapat menurun drastis setelah pesanan complete.</span></li>
+<li>Estimasi Pesanan = Paling Cepat ± 1×24 Jam / 2-5 Hari | <span class="highlight2">[ ! ] Layanan dengan harga murah cenderung memiliki beberapa masalah terutama pada kecepatan pesanan selesai.</span></li>
+
+      </ul>
+    </div>
+        <div class="deskripsi1">
+      <h4>Catatan</h4>     
+    </div>
+    <div class="deskripsi2">
+      <ul>
+      <li>Kecepatan bisa terpengaruh antrian pesanan</li>
+      <li>Layanan dengan harga murah seringkali mengalami masalah dalam kecepatan penyelesaian</li>
+      <li>Kecepatan bisa berkurang saat server sibuk/error</li>
+        </ul>
+      </div>
+  </div>
+
+
+  <div id="layanan2" class="service-box">
+    <div class="deskripsi1">
+      <h4>Deskripsi Layanan</h4>     
+    </div>
+    <div class="deskripsi2">
+      <ul>
+        <li>Layanan Followers dengan harga <span class="highlight2">terjangkau</span> 🌟</li>
+        <li>Kualitas Followers = <span class="highlight2">Mix ( Real + Bot )</span></li>
+        <li>Rate Drop = 30-80% | <span class="highlight2">[ ! ] Layanan dengan harga murah memiliki rate drop tinggi.</span></li>
+        <li>Kecepatan penyelesaian = Paling Cepat ± 1-5 Jam ⚡⚡</li>
+      </ul>
+    </div>
+        <div class="deskripsi1">
+      <h4>Catatan</h4>     
+        </div>
+        <div class="deskripsi2">
+      <ul>
+      <li>Kecepatan bisa terpengaruh antrian pesanan</li>
+      <li>Layanan dengan harga murah seringkali mengalami masalah dalam kecepatan penyelesaian</li>
+      <li>Kecepatan bisa berkurang saat server sibuk/error</li>
+        </ul>
+      </div>
+  </div>
+
+  <!-- Konten untuk IG LIKE ANTI TURUN -->
+  <div id="layanan3" class="service-box">
+    <div class="deskripsi1">
+      <h4>Deskripsi Layanan</h4>
+    </div>
+    <div class="deskripsi2">
+      <ul>
+      <li>Layanan Followers dengan kualitas <span class="highlight2">Medium</span> 🔥</li>
+      <li>Harga Terjangkau 💰</li>
+      <li>Kualitas Followers = Mix <span class="highlight2">( 68% Real Acc ) + Bot</span></li>
+      <li>Rate Drop = 30-65% | <span class="highlight2">[ ! ] Layanan dengan harga murah memiliki rate drop tinggi.</span></li>
+        <li>Kecepatan penyelesaian = <span class="highlight2">Paling Cepat ± 1-5 Jam ⚡</span></li>
+      </ul>
+    </div>
+    <div class="deskripsi1">
+      <h4>Catatan</h4>
+    </div>
+    <div class="deskripsi2">
+           <ul>
+      <li>Kecepatan bisa terpengaruh antrian pesanan</li>
+      <li>Layanan dengan harga murah seringkali mengalami masalah dalam kecepatan penyelesaian</li>
+      <li>Kecepatan bisa berkurang saat server sibuk/error</li>
+        </ul>
+    </div>
+  </div>
+  
+  <div id="layanan4" class="service-box">
+    <div class="deskripsi1">
+      <h4>Deskripsi Layanan</h4>
+    </div>
+    <div class="deskripsi2">
+      <ul>
+        <li>Kualitas Followers = <span class="highlight2">Mix Real & Bot</span></li>
+        <li>Rate Drop = 0-80% | <span class="highlight2">[ ! ] Bisa Berkurang sedikit/banyak.</span></li>
+        <li>Kecepatan penyelesaian = <span class="highlight2">Paling Cepat ± 1-3 Jam ⚡</span></li>
+     
+      </ul>
+    </div>
+    <div class="deskripsi1">
+      <h4>Catatan</h4>
+    </div>
+    <duv class="deskripsi2">
+                 <ul>
+      <li>Kecepatan bisa terpengaruh antrian pesanan</li>
+      <li>Layanan dengan harga murah seringkali mengalami masalah dalam kecepatan penyelesaian</li>
+      <li>Kecepatan bisa berkurang saat server sibuk/error</li>
+        </ul>
+    </duv>
+  </div>
+  
+  <div id="layanan5" class="service-box">
+    <div class="deskripsi1">
+      <h4>Catatan Pesanan</h4>
+    </div>
+    <div class="deskripsi2">
+      <ul>
+      <li>[ Old Account Quality ] <span class="highlight2">Followers memiliki tanggal pembuatan yang sudah lama.</span></li>
+      <li>Layanan Rekomendasi Admin 🌟</li>
+      <li>Bisa Refill ♻️ ( 2 Bulan )  <span class="highlight2">[ Apabila Followers berkurang drastis maka bisa mengajukan refill untuk isi ulang followers secara gratis ]</span></li>
+      <li>Rate Drop = <span class="highlight2">Low Drop 15-35% ‼️</span></li>
+        <li>Kecepatan penyelesaian = <span class="highlight2">Paling Cepat ± 1-6 Jam ⚡</span></li>
+      </ul>
+    </div>
+    <div class="deskripsi1">
+      <h4>Catatan</h4>
+    </div>
+    <div class="deskripsi2">
+      <ul>
+              <li>Kecepatan bisa terpengaruh antrian pesanan</li>
+      <li>Layanan dengan harga murah seringkali mengalami masalah dalam kecepatan penyelesaian</li>
+      <li>Kecepatan bisa berkurang saat server sibuk/error</li>
+        </ul>
+    </div>
+  </div>
+  
+  <div id="layanan6" class="service-box">
+    <div class="deskripsi1">
+      <h4>Deskripsi Layanan</h4>
+    </div>
+    <div class="deskripsi2">
+      <ul>
+        <li>Kualitas Layanan = <span class="highlight2">Super Good Quality 🌟</span></li>
+        <li>Kualitas Followers = Mix ( Reall Acc 87% ) + bot</li>
+        <li>Rate Drop = 10-20% <span class="highlight2">[ ! ] Layanan Rate Drop Kecil dengan harga yang masih terjangkau</span> 🌟</li>
+        <li>Kecepatan penyelesaian = <span class="highlight2">Paling Cepat ± 1-4 Jam ⚡</span></li>
+      </ul>
+    </div>
+    <div class="deskripsi1">
+      <h4>Catatan</h4>
+    </div>
+    <div class="deskripsi2">
+            <ul>
+              <li>Kecepatan bisa terpengaruh antrian pesanan</li>
+      <li>Layanan dengan harga murah seringkali mengalami masalah dalam kecepatan penyelesaian</li>
+      <li>Kecepatan bisa berkurang saat server sibuk/error</li>
+        </ul>
+    </div>
+  </div>
+  
+  <div id="layanan7" class="service-box">
+    <div class="deskripsi1">
+      <h4>Deskripsi Layanan</h4>
+    </div>
+    <div class="deskripsi2">
+      <ul>
+        <li>Layanan dengan kualitas <span class="highlight2">Terbaik </span>/ <span class="highlight2"> Premium 🌟👑</span></li>
+        <li>Kualitas Followers = Mixed <span class="highlight2">( 92% Real Acc ) + Bot </span>| <span class="highlight2">Akun Old</span></li>
+        <li>Rate Drop = 5-10% | <span class="highlight2">[ ! ] Layanan dengan rate Drop kecil terbaik 🌟</span></li>
+        <li>Kecepatan penyelesaian = <span class="highlight2">Paling Cepat 1-5 Jam ⚡</span></li>
+      </ul>
+    </div>
+    <div class="deskripsi1">
+      <h4>Catatan</h4>
+    </div>
+    <div class="deskripsi2">
+                 <ul>
+              <li>Kecepatan bisa terpengaruh antrian pesanan</li>
+      <li>Layanan dengan harga murah seringkali mengalami masalah dalam kecepatan penyelesaian</li>
+      <li>Kecepatan bisa berkurang saat server sibuk/error</li>
+        </ul>
+    </div>
+  </div>
+  
+  <div id="layanan8" class="service-box">
+    <div class="deskripsi1">
+      <h4>Deskripsi Layanan</h4>
+    </div>
+    <div class="deskripsi2">
+      <ul>
+        <li>Layanan dengan kualitas <span class="highlight2">super premium </span>👑🌟🔥</li>
+        <li>Kualitas Followers =<span class="highlight2"> 98% Reall Acc</span> + Ada postingan disetiap akun followers.</li>
+        <li>Rate Drop = Less Drop 5-8% |<span class="highlight2"> [ ! ] Rate Drop super kecil – Layanan terbaik untuk kamu yang mencari followers permanen.</span></li>
+        <li>Kecepatan penyelesaian = <span class="highlight2">Paling Cepat 1 Jam</span> /<span class="highlight2"> ± 1-7 Jam ⚡ ⚡</span></li>
+      </ul>
+    </div>
+    <div class="deskripsi1">
+      <h4>Catatan</h4>
+    </div>
+    <div class="deskripsi2">      
+                       <ul>
+              <li>Kecepatan bisa terpengaruh antrian pesanan</li>
+      <li>Layanan dengan harga murah seringkali mengalami masalah dalam kecepatan penyelesaian</li>
+      <li>Kecepatan bisa berkurang saat server sibuk/error</li>
+        </ul>
+    </div>
+  
+    
+</div>
+  
+  <br>
+  
+  
+  
+<!-- Overlay Loading -->
+<div id="loadingOverlay" class="loading-overlay">
+  <div class="loading-content">⌛ Membuat Pesanan.</div>
+</div>
+</div> 
+     <div id="alertContainer" class="alert-container"></div>
+  
+ <div class="btn-wrapper">
+  <button id="btnPesan" class="btn-pesan">Buat Pesanan</button>
+</div>
+</div>
+  <br>
+   <div id="alertContainer" class="alert-container"></div>
+  
+  <br>
+  <br>
+  <br>
+  
+   <script src="orderlk.js"></script>
+</body>
+   </html>

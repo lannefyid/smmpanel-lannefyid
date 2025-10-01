@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buat Pesanan | Lannefy.com</title>
+  <link rel="stylesheet" href="order.css">
+</head>
+<body>
+  <!-- header + logo -->
+<header class="header">
+  <button class="back-btn" onclick="goBackSMM()">
+    &lt;
+  </button>
+  <img src="hlogo.png" alt="Logo" class="logo">
+</header>
+  
+    <div class="banner"><img src="hbanner.png" alt="Banner"></div>
+  <br>
+ <div class="service-section">
+  <!-- Judul Service -->
+
+   
+   <div class="deskjudul">
+     <p>Lengkapi rincian pesananmu dibawah ini biar bisa langsung di proses</p>
+     <p><span class="highlight">[ ! ] Note </span>:</p>
+     <p><span class="highlight">[ 1 ] </span>Isi setiap form dengan benar & valid agar tidak terjadi error.</p>
+     <p><span class="highlight">[ 2 ] </span>Baca deskripsi setiap layanan untuk mengetahui kelebihan & kekurangan pada setiap layanan.</p>
+     
+   </div>
+   <br> 
+  
+     <div class="title-container">
+    <div class="title-box">
+      <img src="ig.png" alt="Instagram Logo" class="logo">
+      <h6>Buat Pesanan</h6>
+    </div>
+  </div> 
+   
+   <div class="promo-box">
+  🎁 <span class="highlight">[ ! ] Promo Spesial s/d 17 Oktober</span>, Gratis 100 Like untuk 1 postingan untuk setiap pembelian diatas 27K
+</div>
+   
+   
+<!-- Username -->
+<div class="form-group">
+  <label for="username">Username / Link Profil</label>
+  <input type="text" id="username" placeholder="Masukkan Username atau Link Profil">
+</div>
+
+<!-- Pilih Layanan -->
+<div class="form-group">
+  <label for="dropdown">Pilih Layanan</label>
+  <div id="dropdown" class="dropdown">
+    <div id="dropdownSelected" class="dropdown-selected">Pilih Layanan</div>
+<ul id="dropdownList" class="dropdown-list">
+  <li data-target="layanan1">IG REELS VIEWS TERMURAH | MAKS UNLIMITED | NR 🔥</li>
+  <li data-target="layanan2">IG REELS VIEWS | MAKS 100M | NR ⚡🔥</li>
+  <li data-target="layanan3">IG REELS VIEWS S-3 | MAKS 100M | NR ⭐🔥⚡</li>
+  <li data-target="layanan4">IG REELS VIEWS S-4 | MAKS 10M | NR 🔥⭐⚡</li>
+  <li data-target="layanan5">IG REELS VIEWS S-5 | MAKS UNLIMITED | NR 🌟🔥</li>
+  <li data-target="layanan6">IG REELS VIEWS | MAKS UNLIMITED | SUPERFAST 🌟🔥⚡👑</li>
+  <li data-target="layanan7">IG REELS VIEWS INDONESIA | MAKS 150K 🌟👑🔥</li>
+</ul>
+  </div>
+</div>
+
+<!-- DETAIL LAYANAN -->
+<div id="serviceContent">
+  <!-- semua <div id="layananX" class="service-box"> tetap di sini -->
+</div>
+
+<!-- FORM KUANTITAS & HARGA (cukup satu kali di sini) -->
+<div class="form-group">
+  <label for="quantity">Jumlah Followers</label>
+  <input type="number" id="quantity" placeholder="Masukkan jumlah followers">
+</div>
+
+<div class="form-group">
+  <label for="totalHarga">Total Harga</label>
+  <input type="text" id="totalHarga" readonly placeholder="Rp 0">
+</div>
+   <p class="min-pembelian">Minimal Pembelian = <span class="highlight2">Rp. 12.000</span></p>
+   
+   <div id="bonusText" class="bonus-text"></div>
+<!-- ==================== KONTEN DETAIL LAYANAN ==================== -->
+<div id="serviceContent">
+ 
+  <div id="layanan1" class="service-box">
+
+  </div>
+
+
+  <div id="layanan2" class="service-box">
+
+  </div>
+
+  <!-- Konten untuk IG LIKE ANTI TURUN -->
+  <div id="layanan3" class="service-box">
+
+  </div>
+  
+  <div id="layanan4" class="service-box">
+
+  </div>
+  
+  <div id="layanan5" class="service-box">
+
+  </div>
+  
+  <div id="layanan6" class="service-box">
+
+  </div>
+  
+  <div id="layanan7" class="service-box">
+
+  </div>
+  
+  <div id="layanan8" class="service-box">
+    <div class="deskripsi1">
+      <h4>Deskripsi Layanan</h4>
+    </div>
+    <div class="deskripsi2">
+      <ul>
+        <li>Layanan dengan kualitas <span class="highlight2">super premium </span>👑🌟🔥</li>
+        <li>Kualitas Followers =<span class="highlight2"> 98% Reall Acc</span> + Ada postingan disetiap akun followers.</li>
+        <li>Rate Drop = Less Drop 5-8% |<span class="highlight2"> [ ! ] Rate Drop super kecil – Layanan terbaik untuk kamu yang mencari followers permanen.</span></li>
+        <li>Kecepatan penyelesaian = <span class="highlight2">Paling Cepat 1 Jam</span> /<span class="highlight2"> ± 1-7 Jam ⚡ ⚡</span></li>
+      </ul>
+    </div>
+    <div class="deskripsi1">
+      <h4>Catatan</h4>
+    </div>
+    <div class="deskripsi2">      
+                       <ul>
+              <li>Kecepatan bisa terpengaruh antrian pesanan</li>
+      <li>Layanan dengan harga murah seringkali mengalami masalah dalam kecepatan penyelesaian</li>
+      <li>Kecepatan bisa berkurang saat server sibuk/error</li>
+        </ul>
+    </div>
+  
+    
+</div>
+  
+  <br>
+  
+  
+  
+<!-- Overlay Loading -->
+<div id="loadingOverlay" class="loading-overlay">
+  <div class="loading-content">⌛ Membuat Pesanan.</div>
+</div>
+</div> 
+     <div id="alertContainer" class="alert-container"></div>
+  
+ <div class="btn-wrapper">
+  <button id="btnPesan" class="btn-pesan">Buat Pesanan</button>
+</div>
+</div>
+  <br>
+   <div id="alertContainer" class="alert-container"></div>
+  
+  <br>
+  <br>
+  <br>
+  
+   <script src="ordervw.js"></script>
+</body>
+   </html>
